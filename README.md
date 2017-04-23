@@ -4,7 +4,7 @@
 ## read_eigenvals.rb
 
 
- A script for analyzing the EIGENVALS calculated by VASP.
+ A script for analyzing the EIGENVALS calculated by VASP(vienna ab initio simulation package).
 
 This script parses EIGENVAL file and format for gnuplot.
 
