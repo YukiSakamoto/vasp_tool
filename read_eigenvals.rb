@@ -24,7 +24,7 @@ begin
 	outfile = File.open(outfilename, "w")
 	File.open("EIGENVAL") do |file|
 		num_bands = 0
-		num_in_each_path =16
+		#num_in_each_path =16
 		num_k = 0
 		current_x = 0.to_f	# for Band structure plotting
 
@@ -128,7 +128,7 @@ if num_in_each_path == 0
 	raise "The number of k-points in each line is not specified"
 end
 
-high_symmetry = read_eigenval_file(num_in_each_path, false, "band.dat")
+high_symmetry = read_eigenval_file(num_in_each_path, spin_pol, "band.dat")
 STDERR.write("band.dat is generated #{spin_pol == true ? "with" : "without"} spin polarization\n")
 
 print "High symmetry coordinate\n"
